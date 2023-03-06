@@ -1,4 +1,4 @@
-function zeros(arr){
+function zeros(arr,n){
     
     var top=0, bottom=n-1, left=0, right=n-1, flag1=0, flag2=0;
     
@@ -22,9 +22,9 @@ function zeros(arr){
         right--;
     }
     if(flag1==0 && flag2==0){
-        return Yes;
+        return "Yes";
     }
-    else return No;
+    else return "No";
     }
     
-    console.log(zeros([[1,1],[1,1]],2))
+    console.log(zeros([[1,1],[1,1]],2)) //=>Yes
