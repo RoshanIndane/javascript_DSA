@@ -15,4 +15,4 @@ function findDuplicates(arr){
 
 }
 
-findDuplicates([1, 2, 3, 6, 3, 6, 1])
+findDuplicates([1, 2, 3, 6, 3, 6, 1]) //=>>Output: 1, 3, 6
