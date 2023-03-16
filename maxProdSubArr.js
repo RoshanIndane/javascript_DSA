@@ -1,17 +1,16 @@
-function maxSubarrayProduct(arr, n)
-{
-    let result = arr[0];
- 
-    for (let i = 0; i < n; i++)
-    {
-        let mul = arr[i];
-        for (let j = i + 1; j < n; j++)
-        {
-            result = Math.max(result, mul);
-            mul *= arr[j];
+function maxSubarrayProduct(arr){
+    
+    var res=arr[0];
+
+    for(var r=0; r<arr.length; r++){
+        var multi=arr[r];
+        for(var j=r+1; j<arr.length; j++){
+            res=Math.max(res, multi);
+            multi*=arr[j]
         }
-        // updating the result for (n-1)th index.
-        result = Math.max(result, mul);
+        res=Math.max(res,multi)
     }
-    return result;
+console.log(res);
 }
+
+maxSubarrayProduct([1, -2, -3, 0, 7, -8, -2 ]) //=>112
