@@ -17,6 +17,4 @@ function zTraversal(N, arr) {
     console.log(bag);
 }
 
-zTraversal(3, [[1, 2, 3],
-[4, 5, 6],
-[7, 8, 9]])  // 1 2 3 5 7 8 9
+zTraversal(3, [[1, 2, 3],[4, 5, 6],[7, 8, 9]])  // 1 2 3 5 7 8 9
