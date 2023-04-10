@@ -10,5 +10,4 @@ function noDivisibleBy7(num){
 
 }
 
-
-noDivisibleBy7("616")//==>Divisible by 7
+noDivisibleBy7("616")  //==>Divisible by 7
